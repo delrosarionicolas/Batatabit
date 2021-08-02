@@ -75,3 +75,29 @@ html {
     line-height: 1.8rem;
     margin-top: 25px;
 }
+
+.header__title--container .header__button {
+    background-color: var(--off-white);
+    left: calc(50% - 114.5px);
+    display: block;
+    height: 48px;
+    padding: 15px;
+    position: absolute;
+    top: calc(100% - 27px);
+    width: 229px;
+    /* Sombra */
+    box-shadow: 2px 8px 16px rgba(89, 73, 30, 0.16);
+    border-radius: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header__button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
+}

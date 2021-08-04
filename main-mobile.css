@@ -16,7 +16,7 @@
     --just-white    : #FFFFFF;
     --off-white     : #FAF8F7;
     --secondary-blue: #1A9AF7;
-    --soft-blue     : #E7F5FF;
+    --soft-blue     : #D7F5FF;
     --soft-orange   : #FFE9D5;
     --warm-black    : #201E1C;
     /* Font family */
@@ -168,6 +168,14 @@ html {
     margin-bottom: 15px;
 }
 
+.main__currency--table .main__currency--table-title-blue {
+    color        : var(--secondary-blue);
+    font-size    : 1.8rem;
+    font-weight  : bold;
+    line-height  : 2.3rem;
+    margin-bottom: 15px;
+}
+
 .main__currency--table .main__currency--table-container {
     height   : 250px;
     margin   : 0 auto;
@@ -190,28 +198,54 @@ html {
     width           : 50%;
 }
 
-/* .table__top--left,
-.table__top--right,
-.table__mid--left,
-.table__mid--right,
-.table__bottom--left,
-.table__bottom--right {
-    border-radius: 15px 15px;
-} */
+.main__currency--table-container td .ethereum {
+    padding-left: 53px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.main__currency--table-container td .bitrade {
+    padding-left: 57px;
+    display: inline-block;
+}
+
+.main__currency--table-container td .bitpreco {
+    padding-left: 58px;
+    display: inline-block;
+    padding-right: 6px;
+}
+
+.main__currency--table-container td .novadax {
+    padding-left: 58px;
+    display: inline-block;
+    padding-right: 6px;
+}
+
+.main__currency--table-container td .coinext {
+    padding-left: 57px;
+    display: inline-block;
+}
 
 .table__top--right {
     border-radius: 0 15px 0 0;
+    box-shadow      : 2px 0 0 0 rgba(89, 73, 30, 0.07);
 }
 
 .table__top--left {
     border-radius: 15px 0 0 0;
 }
 
+.table__mid--right {
+    box-shadow      : 2px 0 0 0 rgba(89, 73, 30, 0.07);
+}
+
 .table__bottom--right {
     border-radius: 0 0 15px 0;
+    box-shadow      : 2px 2px 0 0 rgba(89, 73, 30, 0.07);
 }
 .table__bottom--left {
     border-radius: 0 0 0 15px;
+    box-shadow      : 0 2px 0 0 rgba(89, 73, 30, 0.07);
 }
 
 .table__right {
@@ -241,4 +275,143 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+
+.logo__bitcoin {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url(./assets/icons/bitcoin.svg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-right: 24px;
+}
+
+.logo__ethereum {
+    position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-left: 21px;
+    background-image: url(./assets/icons/ethereum.svg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.logo__ripple {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url(./assets/icons/ripple.svg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-right: 29px;
+}
+
+.logo__stellar {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url(./assets/icons/stellar.svg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-right: 27px;
+}
+
+.logo__bitrade {
+    border-radius: 50%;
+    position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url(./assets/icons/bitrade.svg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-left: 13px;
+}
+
+.logo__bitpreco {
+    position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url(./assets/icons/bitpreco.svg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-left: 21px;
+}
+
+.logo__novadax {
+    position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url(./assets/icons/novadax.svg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-left: 21px;
+}
+
+.logo__coinext {
+    border-radius: 50%;
+    position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url(./assets/icons/coinext.svg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-left: 14px;
+}
+
+.currency-table__date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+
+.currency-table__date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+
+.currency-table__date b {
+    font-weight: bold;
+}
+
+.currency-table__date-blue {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+
+.currency-table__date-blue p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+
+.currency-table__date-blue b {
+    font-weight: bold;
 }
